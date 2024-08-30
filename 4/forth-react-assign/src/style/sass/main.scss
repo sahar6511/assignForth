@@ -1,0 +1,86 @@
+@import "./abstracts/mixins";
+@import "./pages/app";
+@import "./base/base";
+
+
+
+.menu-container{
+   
+            li{
+                margin-bottom: 20px;   
+                  a{
+                      font-weight: bolder;
+                      color:black;
+                      transition: all 3ms;
+                    
+                    &:hover
+                    {
+                        color:rgb(0, 102, 204);
+                        border-bottom: 1px solid rgb(0, 102, 204);
+                        
+                    }}
+            }
+   
+}
+
+.table-container{
+    th,td,tr,table{
+        border: 1px solid #ccc;
+    }
+    width: 40%;
+    margin: 0 auto;
+    table{
+        text-align: center;
+        width: 100%;
+        tr{
+            height: 30px;
+        }
+        tr:nth-child(even)
+        {
+            td { background: #e8e8ff; }
+        }   
+    }
+}
+
+.center-container{
+    display: flex;
+    justify-content: right;
+    align-items: start;
+    width: 80%;
+    margin: 40px auto;
+}
+.add-table{
+    width: 35%;
+    margin: 0 auto;
+    background: #e8e8ff;
+    padding-right: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-top: 10px;
+    h4,h3{
+        margin: 10px 0;
+    }
+    table{
+        text-align: right;
+        width: 100%;
+        tr{
+            height: 30px;
+            &:last-child{
+                text-align: center;
+                height: 100px;
+            }
+        }
+         
+    }
+}
+
+.w-100{
+    width: 100% !important;
+}
+.selected-course-tb{
+    text-align: center !important;
+}

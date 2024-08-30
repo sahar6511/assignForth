@@ -1,0 +1,16 @@
+.pannels-container{
+    @include space-between-flex;
+    width: 80%;
+    margin: 50px auto;
+    li{
+        @include center-flex;
+        padding: 20px 0;
+        width: 17%;
+        background-color: #e8e8ff;
+        border-radius: 20px;
+        a{
+            font-weight: bolder;
+            color:rgb(0, 102, 204);
+        }
+    }
+}
